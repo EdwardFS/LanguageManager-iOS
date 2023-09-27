@@ -31,7 +31,8 @@
 import PackageDescription
 
 let package = Package(name: "LanguageManager-iOS",
-                      platforms: [.iOS(.v10)],
+                      platforms: [.iOS(.v10),
+					              .tvOS(.v13)],
                       products: [.library(name: "LanguageManager-iOS",
                                           targets: ["LanguageManager-iOS"])],
                       targets: [.target(name: "LanguageManager-iOS",
